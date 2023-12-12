@@ -39,7 +39,7 @@ pipeline {
     stages {
         stage('Build app') {
             steps {
-                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/He-man-t-D/Jenkinsfile.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/He-man-t-D/Jenkinsfile.git']])
             }
         }
         stage('Build Docker image') {
